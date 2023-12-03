@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal-Menu</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="BootStrap/Icons/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-[#f1f5f8]">
+    <header class="bg-white w-full h-[80px] flex items-center justify-center relative">
+        <section class="w-full lg:container flex flex-wrap px-3">
+            <div class="w-1/2 lg:w-[20%] py-4">
+                <figure class="w-full sm:w-[80%] md:w-[70%] lg:w-full"><img src="Image/logo.webp" alt="Mehrsa-Mohajeri"></figure>
+            </div>
+            <div class="w-1/2 lg:hidden flex justify-end items-center text-3xl"><button id="icon" onclick="button()"
+                    class="bi bi-list font-black"></button></div>
+            <div id="menu" class="absolute top-[100%] left-0 w-full opacity-0">
+                <ul class="text-xl font-light shadow-lg bg-white font-mono">
+                    <li class="hover:bg-[#0ca7b0]"><a class="flex w-full py-2 pl-4 hover:translate-x-3 duration-500"
+                            href="">Home</a></li>
+                    <li class="hover:bg-[#0ca7b0]"><a class="flex w-full py-2 pl-4 hover:translate-x-3 duration-500"
+                            href="">About</a></li>
+                    <li class="hover:bg-[#0ca7b0]"><a class="flex w-full py-2 pl-4 hover:translate-x-3 duration-500"
+                            href="">Projects</a></li>
+                    <li class="hover:bg-[#0ca7b0]"><a class="flex w-full py-2 pl-4 hover:translate-x-3 duration-500"
+                            href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hidden lg:flex lg:w-[60%] justify-center items-center">
+                <ul class="flex w-full justify-center items-center mx-6 text-[#0ca7b0] font-mono uppercase ">
+                    <li class="mx-auto"><a class="px-3" href="">Home</a></li>
+                    <li class="mx-auto"><a class="px-3" href="">About</a></li>
+                    <li class="mx-auto"><a class="px-3" href="">Projects</a></li>
+                    <li class="mx-auto"><a class="px-3" href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hidden lg:flex lg:w-[20%] justify-end items-center space-x-4">
+                <a href="#"><i class="bi bi-search text-xl hover:text-[#0ca7b0] duration-300"></i></a>
+                <a href="https://www.instagram.com/mehrsa_mohajeri_developer" target="_blank"><i class="bi bi-instagram text-xl hover:text-[#0ca7b0] duration-300"></i></a>
+                <a href="https://www.linkedin.com/in/mehrsa-mohajeri-developer" target="_blank"><i class="bi bi-linkedin text-xl hover:text-[#0ca7b0] duration-300"></i></a>
+                <a href="https://github.com/Mehrsa-Mohajeri-Developer" target="_blank"><i class="bi bi-github text-xl hover:text-[#0ca7b0] duration-300"></i></a>
+            </div>
+        </section>
+            </div>
+        </section>
+    </header>
+    <script>
+        let x = "o"
+        function button() {
+            if (x == "o") {
+                document.getElementById("menu").style.opacity = "1"
+                document.getElementById("icon").style.rotate = "90deg"
+                document.getElementById("icon").style.color = "#0ca7b0"
+                x = "c"
+            }
+            else if (x == "c") {
+                document.getElementById("menu").style.opacity = "0"
+                document.getElementById("icon").style.rotate = "0deg"
+                document.getElementById("icon").style.color = "black"
+                x = "o"
+            }
+        }
+    </script>
+</body>
+
+</html>
